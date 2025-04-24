@@ -288,3 +288,23 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+window.addEventListener('DOMContentLoaded', () => {
+  const exitButton = document.getElementById('exitButton');
+  const closeOverlayButton = document.getElementById('closeOverlayButton');
+
+  if (exitButton) {
+    exitButton.addEventListener('click', () => {
+      fadeOutAndNavigate('/pages/scene.html');
+    });
+  }
+
+  if (closeOverlayButton) {
+    closeOverlayButton.addEventListener('click', () => {
+      document.getElementById('nodeOverlay').style.display = 'none';
+      // Reset anche i nodi se vuoi riattivarli
+      nodes.forEach(n => n.visible = true);
+      isFocusing = false;
+      animationData = null;
+    });
+  }
+});
