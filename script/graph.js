@@ -282,14 +282,6 @@ function fadeOutAndNavigate(url) {
 }
 window.addEventListener('DOMContentLoaded', () => {
   const exitButton = document.getElementById('exitButton');
-  if (exitButton) {
-    exitButton.addEventListener('click', () => {
-      fadeOutAndNavigate('/pages/scene.html');
-    });
-  }
-});
-window.addEventListener('DOMContentLoaded', () => {
-  const exitButton = document.getElementById('exitButton');
   const closeOverlayButton = document.getElementById('closeOverlayButton');
 
   if (exitButton) {
