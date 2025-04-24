@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 let scene, camera, renderer;
 let nodes = [];
@@ -182,6 +183,39 @@ function init() {
     lon -= event.movementX * 0.1;
     lat -= event.movementY * 0.1;
   });
+
+  document.addEventListener('touchstart', (event) => {
+    if (!isFocusing) {
+      isMouseDown = true;
+      if (event.touches.length === 1) {
+        // Salva la posizione iniziale del tocco
+        lastTouchX = event.touches[0].clientX;
+        lastTouchY = event.touches[0].clientY;
+      }
+    }
+  });
+  
+  document.addEventListener('touchend', () => {
+    isMouseDown = false;
+  });
+  
+  let lastTouchX = 0;
+  let lastTouchY = 0;
+  
+  document.addEventListener('touchmove', (event) => {
+    if (!isMouseDown || isFocusing || animationData || event.touches.length !== 1) return;
+  
+    const touch = event.touches[0];
+    const deltaX = touch.clientX - lastTouchX;
+    const deltaY = touch.clientY - lastTouchY;
+  
+    lon -= deltaX * 0.1;
+    lat -= deltaY * 0.1;
+  
+    lastTouchX = touch.clientX;
+    lastTouchY = touch.clientY;
+  });
+  
 }
 
 function animate() {
