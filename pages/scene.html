@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Il Cosmo della Mia Mente</title>
+        <link rel="stylesheet" href="/styles/scene.css">
+        <link rel="icon" href="image.ico">
+    </head>
+
+    <body>
+        <div id="scene"></div>
+        <div id="fadeOverlay" class="visible"></div>
+
+        <!-- importo librerie e collego lo script javascript -->
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+                }
+            }
+        </script>
+        <script type="module" src="/script/scene.js"></script>
+    </body>
+</html>

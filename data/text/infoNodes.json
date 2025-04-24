@@ -1,0 +1,23 @@
+[
+    {
+      "title": "Nodo 1",
+      "description": "Questo è il nodo numero 1, con informazioni testuali personalizzate."
+    },
+    {
+      "title": "Nodo 2",
+      "description": "Informazioni relative al nodo 2,\n con un messaggio diverso."
+    },
+    {
+      "title": "Nodo 3",
+      "description": "Qui potremmo anche mostrare un'immagine o un link esterno."
+    },
+    {
+      "title": "Nodo 4",
+      "description": "Qui potremmo anche mostrare un'immagine o un link esterno."
+    },
+    {
+      "title": "Nodo 5",
+      "description": "Qui potremmo anche mostrare un'immagine o un link esterno."
+    }
+  ]
+  

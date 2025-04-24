@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Graph Viewer</title>
+  <link rel="stylesheet" href="/styles/graph.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.1/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="nodeOverlay" style="display: none;">
+    <h2 id="nodeTitle"></h2>
+    <p id="nodeDesc"></p>
+  </div>
+  <div id="fadeOverlay" class="visible"></div>
+  <button id="exitButton">← Torna alla scena</button>
+
+  <script type="module" src="/script/graph.js"></script>
+</body>
+</html>
