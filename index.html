@@ -2,16 +2,44 @@
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Il Cosmo della Mia Mente</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="image.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Il Cosmo della Mia Mente</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="icon" href="image.ico" />
+    <script type="module" src="./script/index.js"></script>
 </head>
 
 <body>
-  <a href="/pages/scene.html">Osti</a><br>
-  <a href="/pages/graph.html">Male</a>
+    <div class="canvas-container"></div>
+    <div class="glass-bg">
+        <div class="overlay">
+            <h1 class="shiny-title">Il Cosmo della Mia Mente</h1>
+            <a href="./pages/scene.html" class="glass-button">Esplora</a>
+        </div>
+    </div>
+
+    <!-- importo librerie e collego lo script javascript -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@latest/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@latest/examples/jsm/"
+            }
+        }
+    </script>
+
+    <script>
+        // Loop animation for shiny effect
+        const title = document.querySelector('.shiny-title');
+        function shine() {
+            title.style.backgroundPosition = '0%';
+            setTimeout(() => {
+                title.style.backgroundPosition = '100%';
+            }, 100);
+        }
+        setInterval(shine, 2000);
+    </script>
 </body>
 
 </html>
