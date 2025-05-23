@@ -39,7 +39,7 @@ window.addEventListener('resize', () => {
 const loader = new GLTFLoader();
 let brain = new THREE.Group();
 
-loader.load('/data/models/cervello.glb', function (gltf) {
+loader.load('./data/models/cervello.glb', function (gltf) {
     brain.add(gltf.scene);
     scene.add(brain);
 }, undefined, function (error) {

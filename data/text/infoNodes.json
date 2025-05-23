@@ -1,23 +1,126 @@
 [
-    {
-      "title": "Nodo 1",
-      "description": "Questo è il nodo numero 1, con informazioni testuali personalizzate."
-    },
-    {
-      "title": "Nodo 2",
-      "description": "Informazioni relative al nodo 2,\n con un messaggio diverso."
-    },
-    {
-      "title": "Nodo 3",
-      "description": "Qui potremmo anche mostrare un'immagine o un link esterno."
-    },
-    {
-      "title": "Nodo 4",
-      "description": "Qui potremmo anche mostrare un'immagine o un link esterno."
-    },
-    {
-      "title": "Nodo 5",
-      "description": "Qui potremmo anche mostrare un'immagine o un link esterno."
-    }
-  ]
-  
+  {
+    "title": "Pensieri inconsci",
+    "description": "Una raccolta di pensieri che emergono senza preavviso, riflessi di un mondo interiore che sfugge al controllo della coscienza."
+  },
+  {
+    "title": "Società che non guarda al progresso futuro",
+    "description": "Un'analisi su come alcune scelte collettive siano radicate nel passato, impedendo una visione innovativa e sostenibile del futuro."
+  },
+  {
+    "title": "Guerre",
+    "description": "Conflitti che segnano il corso della storia, plasmando confini e ideologie attraverso distruzione e rinascita."
+  },
+  {
+    "title": "Militari",
+    "description": "La struttura e l'organizzazione di eserciti e forze armate, simbolo di potere e difesa ma anche di controllo sociale."
+  },
+  {
+    "title": "Educazione",
+    "description": "Il pilastro fondamentale per lo sviluppo umano, ma spesso vittima di disuguaglianze e accesso limitato."
+  },
+  {
+    "title": "Esplorazione degli abissi",
+    "description": "Le profondità marine nascondono segreti millenari, ancora inesplorati e misteriosi per l'occhio umano."
+  },
+  {
+    "title": "Esplorazione del cosmo",
+    "description": "Un viaggio verso l'ignoto, alla scoperta di nuovi mondi e dell'origine dell'universo, spingendo i confini della tecnologia."
+  },
+  {
+    "title": "Macchine (elettriche e non)",
+    "description": "L'evoluzione delle macchine, da semplici strumenti a complessi sistemi automatizzati che ridefiniscono il concetto di lavoro."
+  },
+  {
+    "title": "Ambiente",
+    "description": "Il fragile equilibrio tra sviluppo umano e conservazione della natura, un tema centrale per il futuro del pianeta."
+  },
+  {
+    "title": "Politica non bilanciata",
+    "description": "Decisioni che privilegiano pochi a discapito di molti, riflesso di un sistema incapace di garantire equità e giustizia."
+  },
+  {
+    "title": "Innovazioni tecnologiche",
+    "description": "Progetti futuristici e invenzioni rivoluzionarie che stanno trasformando il modo in cui viviamo e interagiamo."
+  },
+  {
+    "title": "Questioni sociali (sbilanciamento tra i sessi)",
+    "description": "Le disparità di genere come riflesso di preconcetti radicati, un ostacolo ancora presente verso la parità."
+  },
+  {
+    "title": "Medicina",
+    "description": "La scienza medica in costante evoluzione, tra nuove scoperte e sfide globali come le pandemie."
+  },
+  {
+    "title": "Intelligenza Artificiale",
+    "description": "L'ascesa dell'intelligenza artificiale sta cambiando radicalmente il concetto di automazione e interazione digitale."
+  },
+  {
+    "title": "Cybersecurity",
+    "description": "La protezione dei dati e delle infrastrutture digitali, un tema sempre più centrale nel mondo interconnesso."
+  },
+  {
+    "title": "Cambiamento climatico",
+    "description": "Gli effetti del riscaldamento globale e le sfide per invertire i danni causati dall'inquinamento e dallo sfruttamento delle risorse."
+  },
+  {
+    "title": "Robotica avanzata",
+    "description": "L'evoluzione dei robot, non solo come strumenti industriali, ma come supporto nella vita quotidiana e nell'assistenza umana."
+  },
+  {
+    "title": "Viaggi nel tempo",
+    "description": "Teorie e speculazioni su come il concetto di tempo possa essere manipolato, un sogno della fantascienza che sfida le leggi della fisica."
+  },
+  {
+    "title": "Energia rinnovabile",
+    "description": "La transizione verso fonti di energia sostenibili, essenziali per un futuro senza combustibili fossili."
+  },
+  {
+    "title": "Cultura digitale",
+    "description": "L'impatto di internet e dei social media sulla società, tra nuove connessioni e dipendenze virtuali."
+  },
+  {
+    "title": "Transumanesimo",
+    "description": "L'idea di migliorare le capacità umane attraverso la tecnologia, fondendo uomo e macchina."
+  },
+  {
+    "title": "Sostenibilità urbana",
+    "description": "Progettare città più vivibili e sostenibili, dove l'architettura si sposa con l'ambiente circostante."
+  },
+  {
+    "title": "Blockchain e criptovalute",
+    "description": "La rivoluzione economica digitale che promette decentralizzazione e trasparenza nei mercati globali."
+  },
+  {
+    "title": "Migrazioni globali",
+    "description": "Spostamenti di popolazioni causati da guerre, disastri ambientali e crisi economiche, un fenomeno che modella il mondo."
+  },
+  {
+    "title": "Fake News e manipolazione mediatica",
+    "description": "La distorsione dell'informazione nell'era digitale, un pericolo per la democrazia e la verità."
+  },
+  {
+    "title": "Sistemi di sorveglianza",
+    "description": "L'incremento del controllo tecnologico nelle città e nelle comunità, tra sicurezza e violazione della privacy."
+  },
+  {
+    "title": "Arte digitale",
+    "description": "L'arte si evolve nel mondo virtuale, tra NFT e gallerie online che ridefiniscono il concetto di proprietà e fruizione."
+  },
+  {
+    "title": "Esplorazione del passato",
+    "description": "L'archeologia moderna come strumento per riscoprire antiche civiltà e capire l'evoluzione dell'uomo."
+  },
+  {
+    "title": "Bioingegneria",
+    "description": "La scienza che riscrive i confini del possibile, dalla rigenerazione dei tessuti alle modifiche genetiche."
+  },
+  {
+    "title": "Reti neurali e apprendimento profondo",
+    "description": "La simulazione dei processi cognitivi attraverso algoritmi avanzati, un passo verso la comprensione dell'intelligenza umana."
+  },
+  {
+    "title": "Impatto della globalizzazione",
+    "description": "L'interconnessione dei mercati e delle culture, un fenomeno che unisce e divide allo stesso tempo."
+  }
+]
