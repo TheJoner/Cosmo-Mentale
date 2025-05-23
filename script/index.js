@@ -1,5 +1,5 @@
-import * as THREE from 'three';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import * as THREE from 'three'; // Importa la libreria THREE.js
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js'; // Importa il loader GLTF
 
 /**
  * Base setup
@@ -39,7 +39,7 @@ window.addEventListener('resize', () => {
 const loader = new GLTFLoader();
 let brain = new THREE.Group();
 
-loader.load('./data/models/cervello.glb', function (gltf) {
+loader.load('/data/models/cervello.glb', function (gltf) {
     brain.add(gltf.scene);
     scene.add(brain);
 }, undefined, function (error) {

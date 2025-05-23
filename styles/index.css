@@ -1,89 +1,112 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Courier New', Courier, monospace;
-    overflow: hidden;
-    background: rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .canvas-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .glass-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(15px) brightness(0.9);
-    background: rgba(36, 6, 49, 0.226);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px) brightness(0.9);
+  background: rgba(36, 6, 49, 0.226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 .overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .shiny-title {
-    font-size: 3rem;
-    color: #fff;
-    background: linear-gradient(90deg, #3187ce98, #399191c7, #a12bd8);
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    animation: shine 3.2s linear infinite;
+  font-size: 3rem;
+  color: #fff;
+  background: linear-gradient(90deg, #3187ce98, #399191c7, #a12bd8);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 3.2s linear infinite;
 }
 
 @keyframes shine {
-    0% { background-position: 0%; }
-    100% { background-position: 200%; }
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
 }
-
-
 
 .glass-button {
-    margin-top: 20px;
-    padding: 15px 30px;
-    border-radius: 15px;
-    backdrop-filter: blur(5px);
-    background: rgba(175, 87, 87, 0.2);
-    color: #f5e6e6;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
-    transition: color .5s;
-  }
-
-  .glass-button:before {
-    content: '';
-    position: absolute;
-    border-radius: 15px;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: #79483986;
-    z-index: -1;
-    transform: scaleX(0);
-    transition: transform .5s;
-  }
-
-  .glass-button:hover {
-    transform: scale(1.05);
-    color: #fff;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  background: rgba(175, 87, 87, 0.2);
+  color: #f5e6e6;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+  transition: color .5s;
 }
 
-  .glass-button:hover:before {
-    transform: scaleX(1);
-  }
+.glass-button:before {
+  content: '';
+  position: absolute;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #79483986;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.glass-button:hover {
+  transform: scale(1.05);
+  color: #fff;
+}
+
+.glass-button:hover:before {
+  transform: scaleX(1);
+}
+
+footer {
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+  transform: translate(-50%, 50%);
+  width: auto;
+  min-width: 200px;
+  text-align: center;
+  padding: 12px 24px 8px 24px;
+  background: rgba(15, 32, 39, 0.85);
+  font-size: 1rem;
+  color: #7eeeff;
+  letter-spacing: 0.08em;
+  z-index: 2;
+  box-shadow: 0 -2px 12px 0 rgba(0,0,0,0.18);
+  backdrop-filter: blur(6px);
+}

@@ -281,11 +281,18 @@ function fadeOutAndNavigate(url) {
   }, 1000); // deve combaciare con il transition
 }
 window.addEventListener('DOMContentLoaded', () => {
-  const exitButton = document.getElementById('exitButton');
+  const sceneButton = document.getElementById('sceneButton');
   const closeOverlayButton = document.getElementById('closeOverlayButton');
-
-  if (exitButton) {
+  const exitButton = document.getElementById('exitButton');
+  
+  if(exitButton) {
     exitButton.addEventListener('click', () => {
+      fadeOutAndNavigate('/pages/last.html');
+    });
+  }
+
+  if (sceneButton) {
+    sceneButton.addEventListener('click', () => {
       fadeOutAndNavigate('/pages/scene.html');
     });
   }

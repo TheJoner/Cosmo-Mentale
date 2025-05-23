@@ -242,7 +242,7 @@ function fadeOutAndNavigate(url) {
 const exitBtn = document.getElementById('exitButton');
 if (exitBtn) {
   exitBtn.addEventListener('click', () => {
-    fadeOutAndNavigate('graph.html'); // o altra destinazione
+    fadeOutAndNavigate('/pages/last.html'); // o altra destinazione
   });
 }
 
